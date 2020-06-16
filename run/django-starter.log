@@ -1,0 +1,72 @@
+*** Starting uWSGI 2.0.19 (64bit) on [Tue Jun 16 12:00:20 2020] ***
+compiled with version: 8.3.1 20190507 (Red Hat 8.3.1-4) on 16 June 2020 09:57:58
+os: Linux-4.18.0-80.11.2.el8_0.x86_64 #1 SMP Tue Sep 24 11:32:19 UTC 2019
+nodename: vmi326446.contaboserver.net
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /var/www/django-starter
+writing pidfile to /var/www/django-starter/run/django-starter.pid
+detected binary path: /var/www/django-starter/.venv/bin/uwsgi
+chdir() to /var/www/django-starter/project
+your processes number limit is 31141
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /var/www/django-starter/run/django-starter.sock fd 5
+Python version: 3.6.8 (default, Oct  7 2019, 17:58:22)  [GCC 8.2.1 20180905 (Red Hat 8.2.1-3)]
+PEP 405 virtualenv detected: /var/www/django-starter/.venv/
+Set PythonHome to /var/www/django-starter/.venv/
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x854eb0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x854eb0 pid: 17872 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 17872)
+spawned uWSGI worker 1 (pid: 17874, cores: 1)
+Invalid HTTP_HOST header: 'django-starter.com'. You may need to add 'django-starter.com' to ALLOWED_HOSTS.
+Bad Request: /
+[pid: 17874|app: 0|req: 1/1] 213.230.102.255 () {40 vars in 736 bytes} [Tue Jun 16 10:05:10 2020] GET / => generated 56787 bytes in 172 msecs (HTTP/1.1 400) 2 headers in 86 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'django-starter.com'. You may need to add 'django-starter.com' to ALLOWED_HOSTS.
+Bad Request: /robots.txt
+[pid: 17874|app: 0|req: 2/2] 213.230.102.255 () {38 vars in 600 bytes} [Tue Jun 16 10:05:10 2020] GET /robots.txt => generated 56645 bytes in 57 msecs (HTTP/1.1 400) 2 headers in 86 bytes (1 switches on core 0)
+Tue Jun 16 10:06:01 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.19 (64bit) on [Tue Jun 16 12:06:06 2020] ***
+compiled with version: 8.3.1 20190507 (Red Hat 8.3.1-4) on 16 June 2020 09:57:58
+os: Linux-4.18.0-80.11.2.el8_0.x86_64 #1 SMP Tue Sep 24 11:32:19 UTC 2019
+nodename: vmi326446.contaboserver.net
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /var/www/django-starter
+writing pidfile to /var/www/django-starter/run/django-starter.pid
+detected binary path: /var/www/django-starter/.venv/bin/uwsgi
+chdir() to /var/www/django-starter/project
+your processes number limit is 31141
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /var/www/django-starter/run/django-starter.sock fd 6
+Python version: 3.6.8 (default, Oct  7 2019, 17:58:22)  [GCC 8.2.1 20180905 (Red Hat 8.2.1-3)]
+PEP 405 virtualenv detected: /var/www/django-starter/.venv/
+Set PythonHome to /var/www/django-starter/.venv/
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x26aaeb0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x26aaeb0 pid: 18347 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 18347)
+spawned uWSGI worker 1 (pid: 18349, cores: 1)
+[pid: 18349|app: 0|req: 1/1] 213.230.102.255 () {42 vars in 767 bytes} [Tue Jun 16 10:06:07 2020] GET / => generated 16351 bytes in 62 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 0)
+Not Found: /static/admin/css/fonts.css
+[pid: 18349|app: 0|req: 2/2] 213.230.102.255 () {40 vars in 689 bytes} [Tue Jun 16 10:06:07 2020] GET /static/admin/css/fonts.css => generated 2022 bytes in 8 msecs (HTTP/1.1 404) 4 headers in 129 bytes (1 switches on core 0)
